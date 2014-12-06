@@ -1,0 +1,160 @@
+@import 'variables.less';
+
+@media screen and (max-width: 975px) {
+	body { font-size: 18px}
+
+	header, section {
+		padding: 0 3%;
+	}
+	section {
+		padding-top: 50px;
+		li {
+			float: left;
+			width: 46%;
+			&:nth-child(odd) {
+				margin: 0 2% 30px 0;
+			}
+			&:nth-child(even) {
+				margin: 0 0 30px 2%;
+			}
+		}
+	}
+
+	header {
+		position: relative;
+		nav {
+			#trigger{
+				display: block;
+				position: fixed;
+				right: 10px;
+				top: 15px;
+				width: 60px;
+				height: 60px;
+				background: white;
+				font-size: 2.5em;
+				text-align: center;
+				padding-top: 6px;
+				z-index: 20;
+			}
+			ul {
+				position: fixed; 
+				z-index: 20;
+				right: 5px;
+				top: 90px;
+				display: none;
+				overflow: hidden;
+			}
+			li {
+				float: none;
+				text-align: right;
+				margin: 20px 0;
+				a {
+					background: @salmon;	
+					padding: 10px;
+					color: white !important;
+				}
+			}
+			#highlight {
+				display: none;
+			}
+		}
+	
+	}
+ 	#hero {
+		height: 420px;
+	}
+	#index #hero {
+		#hero_nav {
+			padding: 0 3%;
+		}
+		#prev, #next {
+			width: 20px;
+			height: 30px;
+			font-size: 4em;
+		}
+		.slides {
+			height: 340px;
+			li {
+				h2 {
+					top: 120px;
+				}
+				h3 {
+					top: 185px;
+				}
+			}
+		}
+		
+	}
+	#about_us, #services {
+		#hero {
+			h2 {
+				margin-top: 50px;
+				margin-bottom: 30px;
+			}
+			h3 {
+
+				margin: 0 5%;
+			}
+		}
+	}
+	#about_us{
+		#our_mission {
+			h2 {
+				width: 100%;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			img {
+				width: 100%;
+				margin-bottom: 0px;
+			}
+			p {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	#services {
+		#lorem {
+			img, h3, p, ul{
+				width: 100%;
+			}
+			h3 {
+				text-align: center;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	section {
+		padding-top: 50px;
+		li {
+			float: left;
+			width: 100%;
+			&:nth-child(odd) {
+				margin: 0 0 30px 0;
+			}
+			&:nth-child(even) {
+				margin: 0 0 30px 0;
+			}
+		}
+	}
+	#index #hero {
+		#hero_nav {
+			top: 10%;
+		}
+		.slides {
+			height: 340px;
+			li {
+				font-size: .7em;
+				h2 {
+					top: 80px;
+				}
+				h3 {
+					top: 130px;
+				}
+			}
+		}
+		
+	}
+}

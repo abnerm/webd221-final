@@ -1,0 +1,132 @@
+@import 'variables.less';
+
+#about_us #hero {
+	background: url('../assets/img/6.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+#about_us #about {
+	p {
+		margin-bottom: 50px;
+	}
+}
+
+#our_team {
+	background: @lightgrey;
+	text-align: center;
+	div {
+		width: 180px;
+		height: 180px;
+		margin: 0 auto;
+		border-radius: 50%;
+		background-size: 100%;
+		border-radius: 50%;
+		border: 3px solid #E6E6E6;
+		overflow: hidden;
+	}
+	h3 {
+		font-size: 1.125em;
+		margin-bottom: 0px ;
+	}
+	h4{
+		margin-top: 5px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 0.875em;
+	}
+
+}
+#our_mission {
+	h2 {
+		text-align: left;
+		width: 45%;
+		float: left;
+	}
+	p {
+		text-align: left;
+		float: left;
+		font-size: 0.875em;
+		width: 45%;
+	}
+	img {
+		float: right;
+		width: 50%;
+		margin-bottom: 95px;
+	}
+}
+
+#services #hero {
+	background: url('../assets/img/5.jpg');
+	background-size: cover;
+	background-position: center center;	
+}
+
+#our_services {
+	ul {margin-top: 70px;}
+	li {
+		border: 2px solid @lightgrey;
+		padding: 15px;
+		padding-top: 0;
+		.fa {
+			font-size: 1.625em;
+			text-align: center;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			margin-top: -25px;
+			background: white;
+			display: block;
+			padding-top: 10px;
+			border-radius: 50%;
+			border: 2px solid @lightgrey;
+			color : #FF3E8C;
+		}
+		&:nth-child(2) .fa { color : #FF4E00}
+		&:nth-child(3) .fa { color : #009CDA}
+		&:nth-child(4) .fa { color : #474747}
+		a {
+			color: @dullSalmon;
+			text-align: center;
+			display: block;
+			clear: both;
+		}
+	}
+}
+#lorem {
+	background: @lightgrey;
+	img, h3, p, ul { 
+		float: left;
+		display: block;
+		width: 50%;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: 1.125em;
+		text-align: left;
+		margin: 15px 0 0 0;
+	}
+	li {	
+		clear: both;
+		width: 100%;
+		margin: 5px 0;
+		font-size: 0.85em;
+		opacity: .7;
+		&:before {
+			content: "\f00c";
+			font-family: FontAwesome;
+			color: #00E62E;
+			margin-right: 8px;
+		}
+	}
+}
+#our_clients {
+	img {
+		width: 156px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+
+
