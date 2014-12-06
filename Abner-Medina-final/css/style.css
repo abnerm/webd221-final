@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 13px;
+  background: #eef7fb;
+  color: #8a8a8a;
+}
+header,
+section,
+footer {
+  float: left;
+}
+blockquote,
+p,
+span {
+  clear: both;
+}
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+h5 {
+  letter-spacing: normal;
+}
+h2,
+h3,
+h4,
+a:visited,
+a {
+  font-family: 'Futura', 'Lucida Sans', Trebuchet, sans-serif;
+  color: #72b5cc;
+  text-decoration: none;
+}
+.ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+}
+header h1 {
+  background: url('../assets/logotype.png');
+  height: 34px;
+  width: 207px;
+  margin: 30px 14px;
+}
+header nav {
+  padding: 0 18px 10px;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: 2px;
+  color: #72B5CC;
+}
+header nav li {
+  line-height: 24px;
+  -webkit-transition: all .5s ease;
+}
+header nav .highlight {
+  background: #dcedf3;
+}
+header nav a {
+  margin-left: 10px;
+}
+header nav a:hover {
+  color: #529bb4;
+}
+main {
+  width: calc(100% - 240px);
+  float: right;
+  padding: 0 10px;
+}
+main section {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 45px 0 70px;
+  margin-bottom: 1px;
+}
+main h2 {
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+main .gapped {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 65px;
+  margin: 0 35px;
+}
+#work {
+  padding: 2px 8px 70px;
+}
+#work div {
+  width: 285px;
+  height: 178px;
+  float: left;
+  margin: 8px;
+  border: 12px solid white;
+}
+#work div img {
+  width: 100%;
+  opacity: 0;
+  background-size: 100%;
+  -webkit-transition: all .5s ease;
+}
+#work div .active {
+  opacity: 1;
+}
+#thinking blockquote {
+  font-size: 2em;
+  margin-bottom: 65px;
+}
+#thinking blockquote p {
+  margin: 0;
+  position: relative;
+}
+#thinking blockquote footer {
+  text-align: right;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding-right: 25px;
+  font-style: italic;
+}
+#thinking blockquote::before {
+  content: '\201C';
+  position: absolute;
+  margin-left: -12px;
+}
+#thinking blockquote p::after {
+  content: '\201D';
+}
+#thinking p {
+  margin: 20px 0;
+}
+#blog li {
+  width: 286px;
+  height: 450px;
+  float: left;
+  margin-right: 15px;
+  background: white;
+  position: relative;
+}
+#blog li .post {
+  padding: 25px 25px 0;
+}
+#blog li .post a:last-child {
+  position: absolute;
+  bottom: 0;
+  height: 35px;
+  padding-top: 5px;
+  border-top: 1px solid #E4E4E4;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  width: calc(100% - 50px);
+}
+#blog li h4 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+#blog li h5 {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: #8a8a8a;
+  font-size: 1.2em;
+  text-transform: none;
+}
